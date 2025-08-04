@@ -1,0 +1,17 @@
+.terminal-output
+{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    overflow: auto;
+}
+.terminal--size-default .terminal-output
+{
+    padding: 10px 10px 20px 10px;
+    border-radius: var(--border-radius-middle);
+}
+.terminal--theme-default .terminal-output
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+}

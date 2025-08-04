@@ -1,0 +1,16 @@
+.form-group
+{
+
+}
+div.form-group--size-default:nth-of-type(n+2)
+{
+    margin-top: 20px;
+}
+.form-group .custom-select--size-default:nth-child(n+2)
+{
+    margin-left: 0;
+}
+.form-group .custom-select--size-default .custom-select-input
+{
+    max-width: 100%;
+}

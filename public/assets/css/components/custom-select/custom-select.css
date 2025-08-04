@@ -1,0 +1,15 @@
+@import './custom-select-input.css';
+@import './custom-select-multiple-input.css';
+@import './custom-select-content.css';
+.custom-select
+{
+    user-select: none;
+}
+.custom-select--size-default:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+.custom-select select
+{
+    display: none;
+}

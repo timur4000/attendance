@@ -1,0 +1,101 @@
+@import './order-account.css';
+@import './order-items.css';
+@import './order-item.css';
+@import './order-confirmation.css';
+@import './orders-detail-items.css';
+.orders
+{
+
+}
+.orders--size-default
+{
+    padding: 20px;
+    position: relative;
+}
+.orders__column
+{
+    z-index: var(--z-index-level-1);
+}
+.orders__system-wrapper:before,
+.orders--theme-default:before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../../../images/systems/canteen/canteen_background_v2.jpg') repeat !important;
+    opacity: .12;
+    pointer-events: none;
+    z-index: var(--z-index-level-0);
+}
+.orders__system-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    z-index: var(--z-index-level-5);
+}
+.orders--size-default .orders__system-wrapper
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.orders--theme-default .orders__system-wrapper
+{
+    background-color: var(--white);
+    transition: var(--transition-very-fast);
+    opacity: 0;
+}
+.orders--theme-default.empty .orders__system-wrapper
+{
+    opacity: 1;
+    pointer-events: unset;
+}
+.orders--theme-default.confirmation .orders__system-wrapper
+{
+    opacity: 1;
+    pointer-events: unset;
+}
+.orders--theme-default:not(.empty) .orders__system-wrapper-text
+{
+    display: none;
+}
+.orders--size-default .orders__system-wrapper-text
+{
+    font-size: var(--font-size-lg);
+    z-index: var(--z-index-level-1);
+}
+.orders__system-wrapper-icon
+{
+    animation: rotate 2s infinite linear;
+}
+.orders--size-default .orders__system-wrapper-icon
+{
+    width: 70px;
+    height: 70px;
+}
+.orders--theme-default .orders__system-wrapper-icon
+{
+    color: var(--royal-blue);
+}
+@media (max-width: 1200px)
+{
+    .orders--size-default
+    {
+        padding: 10px;
+    }
+    .orders__column.grid-column-3
+    {
+        --grid-width-3: var(--grid-width-4);
+    }
+    .orders__column.grid-column-9
+    {
+        --grid-width-9: var(--grid-width-8);
+    }
+}

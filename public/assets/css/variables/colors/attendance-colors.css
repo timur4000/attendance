@@ -1,0 +1,60 @@
+:root
+{
+    --white: #FFFFFF;
+
+    --alabaster: #F9F9F9;
+
+    --alabaster-light: #fdfdfd;
+
+    --wild-sand: #F5F5F5;
+
+    --charade: #2B2C38;
+
+    --charade-opacity-05: #2b2c3880;
+
+    --mercury: #E3E3E3;
+
+    --silver: #cbcbcb;
+
+    --alto: #cfcfcf;
+
+    --jumbo: #788995;
+
+    --royal-blue: #0b355f;
+
+    --melrose: #C8C5FF;
+
+    --royal-blue-opacity-03: #0b355f4d;
+
+    --royal-blue-opacity-02: #0B355F33;
+
+    --royal-blue-opacity-01: #0B355F19;
+
+    --purple-heart: #28375b;
+
+    --azure: #0285cd;
+
+    --persian-rose: #ef3d44;
+
+    --persian-rose-opacity-01: rgba(239, 61, 68, .1);
+
+    --bittersweet: #fc3040;
+
+    --emerald: #427c43;
+
+    --emerald-opacity-01: rgba(66, 124, 67, .1);
+
+    --emerald-opacity-02: rgba(66, 124, 67, .2);
+
+    --emerald-opacity-03: rgba(66, 124, 67, .3);
+
+    --chateau-green: #498641;
+
+    --gold: #ecbf19;
+
+    --web-orange: #fec201;
+
+    --papaya-whip: #FFEFD1;
+
+    --paarl: #543f39;
+}

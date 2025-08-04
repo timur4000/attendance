@@ -1,0 +1,21 @@
+.alert
+{
+    display: inline-flex;
+}
+.input-outer + .alert--size-default
+{
+    margin-top: 6px;
+}
+.alert--size-default
+{
+    font-size: var(--font-size-xxsm);
+    letter-spacing: 1px;
+}
+.alert--theme-persian-rose
+{
+    color: var(--persian-rose);
+}
+.alert.inactive
+{
+    display: none;
+}

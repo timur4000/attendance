@@ -1,0 +1,34 @@
+.card-head
+{
+    display: flex;
+    align-items: center;
+}
+.card-head--type-icon
+{
+    justify-content: space-between;
+}
+.card-head--type-center
+{
+    justify-content: center;
+}
+.card-head--type-between
+{
+    justify-content: space-between;
+}
+.card-head--theme-jumbo
+{
+    border-bottom: 1px solid var(--mercury);
+}
+.card-head--size-default
+{
+    width: 100%;
+    padding: 10px 20px;
+}
+.card-head__icon
+{
+
+}
+.card-head__icon--theme-royal-blue
+{
+    color: var(--royal-blue);
+}

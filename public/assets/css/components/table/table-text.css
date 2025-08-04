@@ -1,0 +1,18 @@
+.table-text
+{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-family: var(--font-family-word-mono-font);
+}
+.table--size-default .table-text
+{
+    min-height: 36px;
+    padding: 0 10px;
+    border-radius: var(--border-radius-middle);
+}
+.table--theme-mercury .table-text
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+}

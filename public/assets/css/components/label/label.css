@@ -1,0 +1,37 @@
+label[for]
+{
+    cursor: pointer;
+}
+.label
+{
+    display: inline-flex;
+}
+.label[for] + .input-outer
+{
+    margin-top: 6px;
+}
+.label[for] + .custom-select
+{
+    margin-top: 6px;
+}
+.label[for] + .multiple-select
+{
+    margin-top: 6px;
+}
+.label[for] + .input--type-textarea
+{
+    margin-top: 6px;
+}
+.label[for] + .custom-number
+{
+    margin-top: 6px;
+}
+.label--size-default
+{
+    font-size: var(--font-size-xsm);
+}
+.label--theme-jumbo
+{
+    font-family: var(--font-family-word-mono-font);
+    letter-spacing: 1px;
+}

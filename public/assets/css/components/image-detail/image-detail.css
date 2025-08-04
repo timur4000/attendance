@@ -1,0 +1,21 @@
+.image-detail
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-detail--type-circle
+{
+    /* border-radius: var(--border-radius-circle); */
+    overflow: hidden;
+}
+.image-detail--size-default
+{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.image-detail--theme-default
+{
+    /* border: 1px solid var(--mercury); */
+}

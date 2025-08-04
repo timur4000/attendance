@@ -1,0 +1,79 @@
+:root
+{
+    --statistic-progress-level: 0;
+}
+.statistic-progress
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.statistic-progress--size-default
+{
+    width: 70px;
+    height: 70px;
+    border-radius: var(--border-radius-circle);
+}
+.statistic-progress--size-default:nth-child(n+2)
+{
+    margin-top: 6px;
+}
+.statistic-progress__property
+{
+
+}
+.statistic-progress--theme-royal-blue .statistic-progress__property
+{
+    color: var(--royal-blue);
+}
+.statistic-progress--theme-chateau-green .statistic-progress__property
+{
+    color: var(--charade);
+}
+.statistic-progress--size-default .statistic-progress__property
+{
+    font-size: var(--font-size-xsm);
+}
+.statistic-progress__progress
+{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.statistic-progress__progress-outer
+{
+    fill: none;
+}
+.statistic-progress--theme-royal-blue .statistic-progress__progress-outer
+{
+    stroke: var(--mercury);
+}
+.statistic-progress--theme-chateau-green .statistic-progress__progress-outer
+{
+    stroke: var(--mercury);
+}
+.statistic-progress--size-default .statistic-progress__progress-outer
+{
+    stroke-width: 10;
+}
+.statistic-progress__progress-inner
+{
+    fill: none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: calc(100 - var(--statistic-progress-level));
+}
+.statistic-progress--theme-royal-blue .statistic-progress__progress-inner
+{
+    stroke: var(--royal-blue);
+}
+.statistic-progress--theme-chateau-green .statistic-progress__progress-inner
+{
+    stroke: var(--chateau-green);
+}
+.statistic-progress--size-default .statistic-progress__progress-inner
+{
+    stroke-width: 10;
+}

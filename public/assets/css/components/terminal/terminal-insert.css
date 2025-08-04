@@ -1,0 +1,85 @@
+.terminal--size-default
+{
+    --terminal-insert-height: 50px;
+}
+.terminal-insert
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.terminal--size-default .terminal-insert
+{
+    height: var(--terminal-insert-height);
+}
+.terminal--theme-default .terminal-insert
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+    border-radius: var(--border-radius-middle);
+}
+.terminal-insert__icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terminal--size-default .terminal-insert__icon
+{
+    width: var(--terminal-insert-height);
+    height: 100%;
+}
+.terminal--theme-default .terminal-insert__icon
+{
+    color: var(--jumbo);
+    border-right: 1px solid var(--mercury);
+}
+.terminal-insert__input
+{
+    outline: none;
+}
+.terminal--size-default .terminal-insert__input
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    font-size: var(--font-size-sm);
+    letter-spacing: 2px;
+}
+.terminal--theme-default .terminal-insert__input
+{
+    color: var(--jumbo);
+    font-family: var(--font-family-word-mono-font);
+    border: unset;
+}
+.terminal-insert__send
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terminal--size-default .terminal-insert__send
+{
+    width: var(--terminal-insert-height);
+    height: 100%;
+}
+.terminal--theme-default .terminal-insert__send
+{
+    color: var(--white);
+    background-color: var(--royal-blue);
+    border-left: 1px solid var(--mercury);
+}
+.terminal--theme-default .terminal-insert__send .icon
+{
+    transition: transform var(--transition-very-fast);
+}
+.terminal--theme-default .terminal-insert__send:hover .icon
+{
+    transform: scale(1.2);
+}
+.terminal--theme-default .terminal-insert__send:active
+{
+    background-color: var(--bittersweet);
+}

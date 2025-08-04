@@ -1,0 +1,18 @@
+<?php
+
+namespace App\ApiRequestSettings\Data\Reports\Canteen\Months;
+
+use App\Standards\ApiRequests\Classifiers\ApiRequestDataTypesClassifier;
+
+/**
+ * Contains all possible base settings of the report canteen two months sum requests.
+ */
+class ReportCanteenTwoMonthsSumApiRequestSettings extends ReportCanteenMonthsApiRequestSettings
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->type_request = ApiRequestDataTypesClassifier::SCA_REPORT_CANTEEN_TWO_MONTHS_SUM;
+    }
+}

@@ -1,0 +1,12 @@
+.currency
+{
+
+}
+.currency--size-default
+{
+    font-size: var(--font-size-sm);
+}
+.currency--size-small
+{
+    font-size: var(--font-size-xsm);
+}

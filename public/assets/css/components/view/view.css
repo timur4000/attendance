@@ -1,0 +1,26 @@
+.view
+{
+    width: calc(100% - var(--left-navigation-width));
+    height: 100%;
+    margin-left: var(--left-navigation-width);
+    transition: var(--transition-very-fast);
+    position: relative;
+    z-index: var(--z-index-level-1);
+}
+body.no-tools .view
+{
+    width: 100%;
+    margin-left: 0;
+}
+.view__inner--size-default
+{
+    width: 100%;
+    height: calc(100% - var(--size-header-height));
+    padding: 20px;
+}
+body.no-tools .view__inner--size-default
+{
+    height: 100%;
+    transition: unset;
+    padding: 10px;
+}

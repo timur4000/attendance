@@ -1,0 +1,60 @@
+.information {}
+.information__heading
+{
+    font-family: var(--font-family-word-mono-font);
+    letter-spacing: 1px;
+}
+.information__upper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.information__upper--type-inputs
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.information__upper--type-default.information__upper--size-default,
+.information__upper--type-inputs.information__upper--size-default
+{
+    margin-bottom: 15px;
+}
+.information__upper-left-column--type-default,
+.information__upper-right-column--type-default
+{
+    display: flex;
+    align-items: center;
+}
+.information__upper-left-column--size-default > *:nth-child(n+2),
+.information__upper-right-column--size-default  > *:nth-child(n+2)
+{
+    margin-left: 30px;
+}
+.information__heading--size-default
+{
+    font-size: var(--font-size-xsmm);
+}
+.information__heading--type-default
+{
+
+}
+.information__heading--theme-default
+{
+    color: var(--azure);
+}
+.information__inputs--type-inputs
+{
+    display: flex;
+    align-items: center;
+}
+.information__inputs--type-inputs.information__inputs--size-default > *:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+
+.information__lower-body--size-default > *:nth-child(n+2)
+{
+    margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+.copyright--type-between
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.copyright__version--theme-purple-heart
+{
+    color: var(--purple-heart);
+}
+.copyright__company
+{
+    font-family: var(--font-family-paragraph-font);
+}
+.copyright__company--size-middle
+{
+    font-size: var(--font-size-xsm);
+}
+.copyright__version
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.copyright__version--size-middle
+{
+    font-size: var(--font-size-xxsm);
+}

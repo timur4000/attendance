@@ -1,0 +1,19 @@
+:root
+{
+    --icon-line-info-count: 4;
+    --icon-line-info-margin: 10;
+}
+.icon-line-info-manager
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-line-info-manager .icon-line-info--size-default
+{
+    width: calc(100% / var(--icon-line-info-count) - ((var(--icon-line-info-count) - 1) * (var(--icon-line-info-margin) * 1px) / var(--icon-line-info-count)));
+}
+
+.icon-line-info-manager .icon-line-info:nth-child(n+2)
+{
+    margin-left: calc(var(--icon-line-info-margin) * 1px);
+}

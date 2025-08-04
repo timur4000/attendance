@@ -1,0 +1,37 @@
+:root
+{
+    --icon-size-8: 8px;
+
+    --icon-size-10: 10px;
+
+    --icon-size-12: 12px;
+
+    --icon-size-14: 14px;
+
+    --icon-size-15: 15px;
+
+    --icon-size-16: 16px;
+
+    --icon-size-18: 18px;
+
+    --icon-size-20: 20px;
+
+    --icon-size-24: 24px;
+
+    --icon-size-30: 30px;
+
+    --icon-size-40: 40px;
+
+
+    --size-header-height: 70px;
+
+    --size-footer-height: 70px;
+
+    --left-navigation-width: 340px;
+
+    --left-navigation-header-line-width: 100px;
+
+    --account-preview-image-size: 40px;
+
+    --button-notification-size: 10px;
+}

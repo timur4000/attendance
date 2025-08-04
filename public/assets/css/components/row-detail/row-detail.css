@@ -1,0 +1,14 @@
+.row-detail
+{
+
+}
+.row-detail--size-default
+{
+    padding: 20px;
+    border-radius: var(--border-radius-middle);
+}
+.row-detail--theme-default
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+}

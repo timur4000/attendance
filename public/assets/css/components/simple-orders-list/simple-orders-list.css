@@ -1,0 +1,25 @@
+@import './simple-orders-list-item.css';
+@import './simple-orders-list-item-list.css';
+.simple-orders-list
+{
+    padding: 20px;
+}
+.simple-orders-list__system
+{
+
+}
+.simple-orders-list__system--size-default
+{
+    font-size: var(--font-size-lg);
+}
+.simple-orders-list__system--theme-default
+{
+    color: var(--persian-rose);
+}
+@media (max-height: 700px)
+{
+    .simple-orders-list
+    {
+        padding: 10px;
+    }
+}

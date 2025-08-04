@@ -1,0 +1,25 @@
+.record-list-item
+{
+    transition: var(--transition-very-fast);
+}
+.record-list-item--theme-mercury:not(:last-child)
+{
+    border-bottom: 1px solid var(--mercury);
+}
+.record-list-item--theme-mercury:nth-child(even)
+{
+    background-color: var(--alabaster-light);
+}
+.record-list-item--theme-mercury:hover
+{
+    background-color: var(--alabaster);
+}
+.record-list-item--size-default
+{
+    padding: 20px;
+}
+.record-list-item--type-line
+{
+    display: flex;
+    align-items: center;
+}

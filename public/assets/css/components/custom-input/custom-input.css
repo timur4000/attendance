@@ -1,0 +1,52 @@
+.custom-input
+{
+    position: relative;
+    cursor: text;
+}
+.custom-input-size-middle
+{
+    height: 36px;
+}
+.custom-input__float-label
+{
+    transition: .15s;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+.input + .custom-input__float-label
+{
+    font: normal normal 14px var(--font-family-word-mono-font);
+    letter-spacing: 1px;
+}
+.input:not(:placeholder-shown) + .custom-input__float-label
+{
+    transform: translateY(0);
+    top: -18px;
+}
+.input:not(:placeholder-shown) + .custom-input__float-label--type-left
+{
+    left: -45px;
+}
+.input:not(:placeholder-shown) + .custom-input__float-label--type-hide
+{
+    opacity: 0;
+}
+.input:not(:placeholder-shown) + .custom-input__float-label--type-hide
+{
+    display: none;
+}
+.input--size-middle + .custom-input__float-label
+{
+    left: 14px;
+}
+.custom-input__float-label--theme-jumbo
+{
+    color: var(--jumbo);
+}
+.input:not(:placeholder-shown) + .custom-input__float-label--theme-jumbo
+{
+    color: var(--charade);
+}

@@ -1,0 +1,13 @@
+.card-total
+{
+
+}
+.card-total--theme-jumbo
+{
+    color: var(--jumbo);
+    font-family: var(--font-family-word-mono-font);
+}
+.card-total--size-default
+{
+    font-size: var(--font-size-m);
+}

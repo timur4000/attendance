@@ -1,0 +1,41 @@
+@import './record-list-item.css';
+.record-list-column
+{
+
+}
+.record-list-column--size-default
+{
+
+}
+.record-list-column--size-default.record-list-column-value
+{
+
+}
+.record-list-column--size-default.record-list-column-property
+{
+
+}
+.record-list-column--size-default.record-list-column-delimiter
+{
+    margin-right: 30px;
+}
+.record-list-column--theme-charade
+{
+    color: var(--charade);
+}
+.record-list-column--theme-jumbo
+{
+    color: var(--jumbo);
+}
+.record-list-column-value
+{
+    flex: 29%;
+}
+.record-list-column-delimiter
+{
+    flex: 1%;
+}
+.record-list-column-property
+{
+    flex: 70%;
+}

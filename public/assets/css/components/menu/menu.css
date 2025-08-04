@@ -1,0 +1,13 @@
+@import 'menu-list.css';
+@import 'menu-item.css';
+@import 'menu-link.css';
+@import 'menu-content.css';
+.menu
+{
+    height: 100%;
+    padding: 0 10px;
+}
+.menu--size-default
+{
+    padding-top: 20px;
+}

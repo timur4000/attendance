@@ -1,0 +1,35 @@
+@import './card-head.css';
+@import './card-main.css';
+@import './card-heading.css';
+@import './card-column.css';
+@import './card-total.css';
+@import './card-paragraph.css';
+.card--type-full-vertical
+{
+    height: 100%;
+}
+.card--size-middle
+{
+    width: 400px;
+    font-family: var(--font-family-word-font);
+}
+.card--theme-white
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+    border-radius: var(--border-radius-middle);
+}
+.card__heading--size-middle
+{
+    font-size: var(--font-size-lg);
+}
+.card__header--size-middle
+{
+    height: 50px;
+}
+.card__header--position-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

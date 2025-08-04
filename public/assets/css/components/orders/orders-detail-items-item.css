@@ -1,0 +1,101 @@
+.orders-detail-items-item
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.orders-items.disable .orders-detail-items-item.inactive
+{
+    display: none;
+}
+.orders-detail-items-item--size-default
+{
+
+}
+.orders-detail-items-item--size-default:nth-child(n+2)
+{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.orders-detail-items-item--theme-default
+{
+
+}
+.orders-detail-items-item--theme-default:nth-child(n+2)
+{
+    border-top: 1px solid var(--mercury);
+}
+.orders-detail-items-item__column
+{
+    display: flex;
+    align-items: center;
+}
+.orders-detail-items-item__column--type-left
+{
+    width: 100%;
+}
+.orders-detail-items-item__section
+{
+    flex: 1;
+}
+.orders-detail-items-item--size-default .orders-detail-items-item__section:nth-child(n+2)
+{
+    margin-left: 20px;
+}
+.orders-detail-items-item--theme-default .orders-detail-items-item__section
+{
+
+}
+.orders-detail-items-item__image
+{
+    list-style: none;
+}
+.orders-detail-items-item--size-default .orders-detail-items-item__image
+{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: var(--border-radius-middle);
+}
+.orders-detail-items-item--theme-default .orders-detail-items-item__image
+{
+    transition: var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+}
+.orders-detail-items-item--theme-default.inactive .orders-detail-items-item__image
+{
+    opacity: .6;
+}
+.orders-detail-items-item__name
+{
+
+}
+.orders-detail-items-item--size-default .orders-detail-items-item__name
+{
+    font-size: var(--font-size-m);
+}
+.orders-detail-items-item--theme-default .orders-detail-items-item__name
+{
+    transition: var(--transition-very-fast);
+}
+.orders-detail-items-item--theme-default.inactive .orders-detail-items-item__name
+{
+    color: var(--jumbo);
+}
+.orders-detail-items-item__price
+{
+
+}
+.orders-detail-items-item--size-default .orders-detail-items-item__price
+{
+    font-size: var(--font-size-m);
+}
+.orders-detail-items-item--theme-default .orders-detail-items-item__price
+{
+    transition: var(--transition-very-fast);
+}
+.orders-detail-items-item--theme-default.inactive .orders-detail-items-item__price
+{
+    color: var(--jumbo);
+}

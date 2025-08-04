@@ -1,0 +1,23 @@
+.modal-heading
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.modal--theme-mercury .modal-heading
+{
+    color: var(--purple-heart);
+}
+.modal--size-middle .modal-heading
+{
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}
+.modal--size-large .modal-heading
+{
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}
+.modal--size-full .modal-heading
+{
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}

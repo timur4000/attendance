@@ -1,0 +1,109 @@
+.icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon *
+{
+    fill: currentColor;
+}
+.icon-size-8
+{
+    width: var(--icon-size-8);
+    min-width: var(--icon-size-8);
+    max-width: var(--icon-size-8);
+    height: var(--icon-size-8);
+    min-height: var(--icon-size-8);
+    max-height: var(--icon-size-8);
+}
+.icon-size-10
+{
+    width: var(--icon-size-10);
+    min-width: var(--icon-size-10);
+    max-width: var(--icon-size-10);
+    height: var(--icon-size-10);
+    min-height: var(--icon-size-10);
+    max-height: var(--icon-size-10);
+}
+.icon-size-12
+{
+    width: var(--icon-size-12);
+    min-width: var(--icon-size-12);
+    max-width: var(--icon-size-12);
+    height: var(--icon-size-12);
+    min-height: var(--icon-size-12);
+    max-height: var(--icon-size-12);
+}
+.icon-size-14
+{
+    width: var(--icon-size-14);
+    min-width: var(--icon-size-14);
+    max-width: var(--icon-size-14);
+    height: var(--icon-size-14);
+    min-height: var(--icon-size-14);
+    max-height: var(--icon-size-14);
+}
+.icon-size-15
+{
+    width: var(--icon-size-15);
+    min-width: var(--icon-size-15);
+    max-width: var(--icon-size-15);
+    height: var(--icon-size-15);
+    min-height: var(--icon-size-15);
+    max-height: var(--icon-size-15);
+}
+.icon-size-16
+{
+    width: var(--icon-size-16);
+    min-width: var(--icon-size-16);
+    max-width: var(--icon-size-16);
+    height: var(--icon-size-16);
+    min-height: var(--icon-size-16);
+    max-height: var(--icon-size-16);
+}
+.icon-size-18
+{
+    width: var(--icon-size-18);
+    min-width: var(--icon-size-18);
+    max-width: var(--icon-size-18);
+    height: var(--icon-size-18);
+    min-height: var(--icon-size-18);
+    max-height: var(--icon-size-18);
+}
+.icon-size-20
+{
+    width: var(--icon-size-20);
+    min-width: var(--icon-size-20);
+    max-width: var(--icon-size-20);
+    height: var(--icon-size-20);
+    min-height: var(--icon-size-20);
+    max-height: var(--icon-size-20);
+}
+.icon-size-24
+{
+    width: var(--icon-size-24);
+    min-width: var(--icon-size-24);
+    max-width: var(--icon-size-24);
+    height: var(--icon-size-24);
+    min-height: var(--icon-size-24);
+    max-height: var(--icon-size-24);
+}
+.icon-size-30
+{
+    width: var(--icon-size-30);
+    min-width: var(--icon-size-30);
+    max-width: var(--icon-size-30);
+    height: var(--icon-size-30);
+    min-height: var(--icon-size-30);
+    max-height: var(--icon-size-30);
+}
+.icon-size-40
+{
+    width: var(--icon-size-40);
+    min-width: var(--icon-size-40);
+    max-width: var(--icon-size-40);
+    height: var(--icon-size-40);
+    min-height: var(--icon-size-40);
+    max-height: var(--icon-size-40);
+}

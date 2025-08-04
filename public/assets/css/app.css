@@ -1,0 +1,92 @@
+@import './animations/animations.css';
+@import './atomics/states/states.css';
+@import './atomics/loading/loading.css';
+@import './atomics/grid/grid.css';
+@import '../fonts/fonts.css';
+@import './variables/sizes.css';
+@import './variables/transitions.css';
+@import './atomics/margin/margin.css';
+@import './atomics/icon/icons.css';
+@import './atomics/template/template.css';
+@import './atomics/fonts/font-sizes.css';
+@import './atomics/z-index/z-index.css';
+@import './atomics/border-radius/border-radius.css';
+@import './components/logotype/logotype.css';
+@import './components/main/main.css';
+@import './components/copyright/copyright.css';
+@import './components/line-switcher/line-switcher.css';
+@import './components/modal/modal.css';
+@import './components/form/form.css';
+@import './components/form-group/form-group.css';
+@import './components/label/label.css';
+@import './components/custom-input/custom-input.css';
+@import './components/input/input.css';
+@import './components/input-outer/input-outer.css';
+@import './components/button/button.css';
+@import './components/password-toggle/password-toggle.css';
+@import './components/custom-checkbox/custom-checkbox.css';
+@import './components/header/header.css';
+@import './components/footer/footer.css';
+@import './components/left-navigation/left-navigation.css';
+@import './components/view/view.css';
+@import './components/account-preview/account-preview.css';
+@import './components/image/image.css';
+@import './components/vertical-separator/vertical-separator.css';
+@import './components/dropdown/dropdown.css';
+@import './components/dropdown-content/dropdown-content.css';
+@import './components/menu/menu.css';
+@import './components/alert/alert.css';
+@import './components/breadcrumbs/breadcrumbs.css';
+@import './components/table/table.css';
+@import './components/card/card.css';
+@import './components/custom-select/custom-select.css';
+@import './components/clue/clue.css';
+@import './components/record-view/record-view.css';
+@import './components/record-table/record-table.css';
+@import './components/record-list/record-list.css';
+@import './components/notification-item/notification-item.css';
+@import './components/statistic-cards/statistic-cards.css';
+@import './components/form-view/form-view.css';
+@import './components/heading/heading.css';
+@import './components/icons-grid/icons-grid.css';
+@import './components/custom-number/custom-number.css';
+@import './components/tabs/tabs.css';
+@import './components/row-detail/row-detail.css';
+@import './components/image-detail/image-detail.css';
+@import './components/list-detail/list-detail.css';
+@import './components/icon-info/icon-info.css';
+@import './components/icon-info/icon-info-wrapper.css';
+@import './components/currency/currency.css';
+@import './components/terminal/terminal.css';
+@import './components/orders/orders.css';
+@import './components/no-image/no-image.css';
+@import './components/paragraph/paragraph.css';
+@import './components/simple-orders-list/simple-orders-list.css';
+@import './components/information/information.css';
+@import './components/integer-statistics/integer-statistics.css';
+@import './components/integer-statistics/integer-statistics-manager.css';
+@import './components/dashboard/dashboard.css';
+@import './components/icon-line-info/icon-line-info.css';
+@import './components/chart/chart.css';
+@import './components/gallery-slider/gallery-slider.css';
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body
+{
+    height: 100%;
+}
+body
+{
+    font: normal normal 13px var(--font-family-paragraph-font), sans-serif;
+    background-color: var(--wild-sand);
+    color: var(--charade);
+}
+.air-datepicker-global-container
+{
+    z-index: var(--z-index-level-8);
+}

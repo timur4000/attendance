@@ -1,0 +1,21 @@
+:root
+{
+    --menu-item-padding: 4px;
+    --menu-item-margin: 4px;
+}
+.menu-item
+{
+    list-style: none;
+}
+.menu-item--size-default:first-child
+{
+    padding-top: 0;
+}
+.menu-item--size-default
+{
+    margin: var(--menu-item-padding) 0;
+}
+.menu-item--size-default:last-child
+{
+    padding-bottom: 0;
+}

@@ -1,0 +1,35 @@
+.icons-grid-item--size-default
+{
+    --icons-grid-item-size: 80px;
+}
+.icons-grid-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.icons-grid-item--size-default
+{
+    width: 100%;
+    height: var(--icons-grid-item-size);
+    border-radius: var(--border-radius-middle);
+}
+.icons-grid-item--theme-default
+{
+    border: 1px solid var(--mercury);
+    background-color: var(--white);
+}
+.icons-grid-item__icon
+{
+
+}
+.icons-grid-item--theme-default .icons-grid-item__icon
+{
+    color: var(--jumbo);
+}
+.icons-grid-item--theme-default .icons-grid-item__icon
+{
+    color: var(--jumbo);
+}

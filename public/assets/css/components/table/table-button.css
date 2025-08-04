@@ -1,0 +1,81 @@
+.table-button
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.table.loading .table-button
+{
+    opacity: .3;
+    pointer-events: none;
+}
+.table-element__row.loading .table-button:not(.loading)
+{
+    opacity: .3;
+    pointer-events: none;
+}
+.table.buttons-disabled .table-button
+{
+    opacity: .3;
+    pointer-events: none;
+}
+.table--size-default .table-button
+{
+    width: 36px;
+    height: 36px;
+    border-radius: var(--border-radius-middle);
+}
+.table--size-default .table-button:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+.table--theme-mercury .table-button.processing
+{
+    position: relative;
+}
+.table--theme-mercury .table-button.processing:before
+{
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: var(--bittersweet);
+    border-radius: var(--border-radius-circle);
+}
+.table--theme-mercury .table-button.default
+{
+    background-color: var(--white);
+    color: var(--azure);
+    border: 1px solid var(--mercury);
+}
+.table--theme-mercury .table-button.default:hover
+{
+    background-color: var(--alabaster);
+    color: var(--purple-heart);
+}
+.table--theme-mercury .table-button.success
+{
+    background-color: var(--white);
+    color: var(--chateau-green);
+    border: 1px solid var(--mercury);
+}
+.table--theme-mercury .table-button.success:hover
+{
+    background-color: var(--alabaster);
+    color: var(--purple-heart);
+}
+.table--theme-mercury .table-button.alert
+{
+    background-color: var(--white);
+    color: var(--bittersweet);
+    border: 1px solid var(--mercury);
+}
+.table--theme-mercury .table-button.alert:hover
+{
+    background-color: var(--alabaster);
+    color: var(--persian-rose);
+}

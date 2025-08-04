@@ -1,0 +1,12 @@
+@import './record-list-item.css';
+@import './record-list-column.css';
+.record-list
+{
+    overflow: hidden;
+}
+.record-list--theme-white
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+    border-radius: var(--border-radius-middle);
+}

@@ -1,0 +1,74 @@
+.input
+{
+    border: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    outline: none;
+    font: normal normal 14px var(--font-family-word-mono-font);
+    letter-spacing: 1px;
+}
+.input--size-middle
+{
+    padding: 0 14px;
+}
+.input-outer--theme-mercury.hover .input:not(.custom-input__input)
+{
+    border: 1px solid var(--royal-blue-opacity-03);
+}
+.input--type-textarea
+{
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    text-overflow: unset;
+}
+.input--size-middle.input--type-textarea
+{
+    line-height: 2;
+    border-radius: 4px;
+    padding: 14px;
+}
+.input--theme-mercury
+{
+    background-color: var(--white);
+    transition: border var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+    border-radius: var(--border-radius-middle);
+}
+.input--theme-mercury.input--type-textarea
+{
+    background-color: var(--white);
+    transition: border var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+}
+.input--theme-mercury.input--type-textarea:focus,
+.input--theme-mercury.input--type-textarea:hover
+{
+    border: 1px solid var(--royal-blue-opacity-03);
+}
+.input-type-number
+{
+    text-align: center;
+}
+.input-type-number::-webkit-outer-spin-button,
+.input-type-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-type-number[type=number] {
+    -moz-appearance: textfield;
+}
+.input-type-number.input--size-middle
+{
+    height: 36px;
+    border-radius: var(--border-radius-middle);
+}
+.input-type-number.input--theme-mercury
+{
+    background-color: var(--white);
+    color: var(--jumbo);
+    border: 1px solid var(--mercury);
+}

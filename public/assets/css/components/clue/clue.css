@@ -1,0 +1,28 @@
+.clue
+{
+    white-space: nowrap;
+    transform: scale(0);
+    transition: .1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    z-index: var(--z-index-level-5);
+}
+.clue.display
+{
+    opacity: 1;
+    transform: scale(1);
+}
+.clue-theme-default
+{
+    background-color: var(--charade);
+    color: var(--white);
+    font-family: var(--font-family-word-mono-font);
+    box-shadow: 0 0 5px var(--charade);
+}
+.clue-size-default
+{
+    padding: 6px 14px;
+    letter-spacing: 1px;
+    font-size: var(--font-size-xxsm);
+    border-radius: var(--border-radius-middle);
+}

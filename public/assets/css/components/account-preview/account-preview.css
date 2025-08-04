@@ -1,0 +1,43 @@
+.account-preview
+{
+    display: flex;
+}
+.account-preview__line
+{
+    display: flex;
+    align-items: center;
+}
+.account-preview__heading
+{
+    font-family: var(--font-family-paragraph-font);
+}
+.account-preview__heading--size-default
+{
+    font-size: var(--font-size-sm);
+
+}.account-preview__sub-heading
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.account-preview__sub-heading--size-default
+{
+    margin-top: 4px;
+    letter-spacing: 1px;
+    font-size: var(--font-size-xxsm);
+}
+.account-preview__sub-heading--theme
+{
+    color: var(--azure);
+}
+.account-preview__image
+{
+    width: var(--account-preview-image-size);
+    height: var(--account-preview-image-size);
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: var(--border-radius-circle);
+}
+.account-preview__image--theme-mercury
+{
+    border: 1px solid var(--mercury);
+}

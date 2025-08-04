@@ -1,0 +1,12 @@
+.footer
+{
+    position: relative;
+    padding: 0 20px;
+    z-index: var(--z-index-level-2);
+}
+.footer--type-authorization .template-wrapper
+{
+    display: flex;
+    align-items: center;
+    height: var(--size-footer-height);
+}

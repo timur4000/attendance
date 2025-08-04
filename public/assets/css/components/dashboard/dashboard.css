@@ -1,0 +1,20 @@
+.dashboard
+{
+
+}
+.dashboard--size-default .dashboard__line:nth-child(n+2)
+{
+    margin-top: 20px;
+}
+.dashboard--size-default .dashboard__line.small:nth-child(n+2)
+{
+    margin-top: 20px;
+}
+.dashboard--size-default .dashboard__line.medium:nth-child(n+2)
+{
+    margin-top: 30px;
+}
+.dashboard--size-default .dashboard__line.large:nth-child(n+2)
+{
+    margin-top: 40px;
+}

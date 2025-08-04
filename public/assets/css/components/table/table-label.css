@@ -1,0 +1,76 @@
+.table-label
+{
+    display: block;
+}
+.table--size-default .table-label.text
+{
+    padding: 4px 6px;
+    border-radius: var(--border-radius-middle);
+}
+.table--size-default .table-label.text
+{
+    margin: 4px;
+}
+.table--theme-mercury .table-label.text.info
+{
+    color: var(--azure);
+    background-color: var(--wild-sand);
+}
+.table--theme-mercury .table-label.icon.info
+{
+    color: var(--azure);
+}
+.table--size-default .table-label.icon svg
+{
+    width: var(--icon-size-18);
+    height: var(--icon-size-18);
+}
+.table--size-default .table-label.time
+{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.table--size-default .table-label.time svg
+{
+    width: var(--icon-size-16);
+    height: var(--icon-size-16);
+    margin-right: 6px;
+}
+.table--size-default .table-label.coins
+{
+    display: flex;
+    align-items: center;
+}
+.table--size-default .table-label.coins svg
+{
+    width: var(--icon-size-16);
+    height: var(--icon-size-16);
+    margin-left: 2px;
+}
+.table--theme-mercury .table-label.text.success
+{
+    color: var(--emerald);
+    background-color: var(--wild-sand);
+}
+.table--theme-mercury .table-label.boolean.success
+{
+    color: var(--emerald);
+}
+.table--theme-mercury .table-label.text.alert
+{
+    color: var(--persian-rose);
+    background-color: var(--wild-sand);
+}
+.table--theme-mercury .table-label.boolean.alert
+{
+    color: var(--persian-rose);
+}
+.table--theme-mercury .table-label.time.info
+{
+    color: var(--azure);
+}
+.table--theme-mercury .table-label.coins.info
+{
+    color: var(--azure);
+}

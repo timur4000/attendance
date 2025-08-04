@@ -1,0 +1,10 @@
+:root
+{
+    --transition-very-fast: .15s;
+
+    --transition-even-faster: .30s;
+
+    --transition-faster: .45s;
+
+    --transition-fast: .60s;
+}

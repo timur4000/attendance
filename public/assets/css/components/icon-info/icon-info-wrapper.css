@@ -1,0 +1,18 @@
+:root
+{
+    --icon-info-count: 0;
+    --icon-info-margin: 30px;
+}
+.icon-info-wrapper
+{
+    display: flex;
+    align-items: center;
+}
+.icon-info-wrapper .icon-info
+{
+    width: calc(100% / var(--icon-info-count) - (var(--icon-info-margin) / var(--icon-info-count)));
+}
+.icon-info-wrapper .icon-info:nth-child(n+2)
+{
+    margin-left: var(--icon-info-margin);
+}

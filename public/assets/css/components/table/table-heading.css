@@ -1,0 +1,25 @@
+.table--size-default .table-heading
+{
+    letter-spacing: 1px;
+}
+.table--size-default .table-heading.level-1
+{
+    font-size: var(--font-size-lg);
+}
+.table--size-default .table-heading.level-2
+{
+    font-size: var(--font-size-m);
+}
+.table--size-default .table-heading.level-3
+{
+    font-size: var(--font-size-sm);
+}
+.table--size-default .table-heading.level-4
+{
+    font-size: var(--font-size-xsm);
+}
+.table--theme-mercury .table-heading
+{
+    color: var(--azure);
+    font-family: var(--font-family-word-mono-font);
+}

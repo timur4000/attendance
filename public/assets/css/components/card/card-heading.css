@@ -1,0 +1,13 @@
+.card-heading
+{
+
+}
+.card-heading--theme-jumbo
+{
+    color: var(--jumbo);
+}
+.card-heading--size-default
+{
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}

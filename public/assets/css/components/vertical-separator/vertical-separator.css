@@ -1,0 +1,10 @@
+.vertical-separator--theme-mercury
+{
+    background-color: var(--mercury);
+}
+.vertical-separator--size-middle
+{
+    width: 1px;
+    height: 40px;
+    margin: 0 20px;
+}

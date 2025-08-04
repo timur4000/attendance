@@ -1,0 +1,26 @@
+.icons-grid-item-covering
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.icons-grid-item:hover .icons-grid-item-covering
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+.icons-grid-item--size-default .icons-grid-item-covering
+{
+    width: 100%;
+    height: 100%;
+}
+.icons-grid-item--theme-default .icons-grid-item-covering
+{
+    background-color: var(--charade-opacity-05);
+    transition: var(--transition-very-fast);
+}

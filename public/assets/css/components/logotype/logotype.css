@@ -1,0 +1,21 @@
+.logotype
+{
+    display: flex;
+    align-items: center;
+}
+.logotype__icon
+{
+    margin-right: 15px;
+}
+.logotype__icon--theme-electric-violet
+{
+    color: var(--royal-blue);
+}
+.logotype__heading
+{
+    font-family: var(--font-family-word-font);
+}
+.logotype__heading--size-middle
+{
+    font-size: var(--font-size-lg);
+}

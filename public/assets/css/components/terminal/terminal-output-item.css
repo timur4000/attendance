@@ -1,0 +1,18 @@
+.terminal-output-item
+{
+    white-space: pre-line;
+}
+.terminal--size-default .terminal-output-item
+{
+    padding: 10px 20px;
+    border-radius: var(--border-radius-middle);
+}
+.terminal--theme-default .terminal-output-item
+{
+    background-color: var(--alabaster);
+    border: 1px solid var(--mercury);
+}
+.terminal--size-default .terminal-output-item:nth-child(n+2)
+{
+    margin-top: 10px;
+}

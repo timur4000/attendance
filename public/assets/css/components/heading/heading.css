@@ -1,0 +1,12 @@
+.heading
+{
+
+}
+.heading__value--size-default
+{
+    font-size: var(--font-size-lg);
+}
+.heading__value--theme-persian-rose
+{
+    color: var(--persian-rose);
+}

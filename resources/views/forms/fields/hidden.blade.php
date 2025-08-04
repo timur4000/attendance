@@ -1,0 +1,1 @@
+<input type="{{ $element->get_type() }}" name="{{ $element->get_name() }}" value="{{ $element->get_value() }}">

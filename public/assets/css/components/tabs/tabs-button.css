@@ -1,0 +1,71 @@
+.tabs-button
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tabs-button--size-default
+{
+    padding: 10px 15px;
+    border-radius: var(--border-radius-middle);
+}
+.tabs-button--size-default:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+.tabs-button--theme-default
+{
+    background-color: var(--white);
+    color: var(--jumbo);
+    opacity: .9;
+    transition: var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+}
+.tabs-button--theme-default:hover
+{
+    color: var(--charade);
+    opacity: 1;
+    border: 1px solid var(--mercury);
+}
+.tabs-button--theme-default:before
+{
+    content: '';
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+    transition: var(--transition-very-fast);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabs-button--theme-default.active:before
+{
+    background-color: var(--azure);
+}
+.tabs-button--theme-default.active
+{
+    opacity: 1;
+    color: var(--azure);
+    pointer-events: none;
+}
+.tabs-button--theme-default.inactive
+{
+    opacity: .5;
+    pointer-events: none;
+}
+.tabs-button__text
+{
+
+}
+.tabs-button__text--size-default
+{
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+    margin-left: 6px;
+}
+.tabs-button__text--theme-default
+{
+    font-family: var(--font-family-word-mono-font);
+}

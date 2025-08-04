@@ -1,0 +1,90 @@
+.orders-account
+{
+    position: relative;
+    overflow: hidden;
+}
+.orders-account--size-default
+{
+    border-radius: var(--border-radius-middle);
+}
+.orders-account--theme-default
+{
+
+}
+.orders-account__input
+{
+    opacity: 0;
+    pointer-events: none;
+}
+.orders-account__upper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orders-account--size-default .orders-account__upper
+{
+    padding: 20px;
+    border-radius: var(--border-radius-middle);
+}
+.orders-account--theme-default .orders-account__upper
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+}
+.orders-account__lower
+{
+    display: flex;
+    justify-content: center;
+}
+.orders-account--size-default .orders-account__lower
+{
+    margin-top: 20px;
+}
+.orders-account__image
+{
+    /*overflow: hidden;*/
+}
+.orders-account--size-default .orders-account__image
+{
+    /*border-radius: var(--border-radius-circle);*/
+}
+.orders-account--theme-default .orders-account__image
+{
+    /*border: 1px solid var(--mercury);*/
+}
+.orders-account--theme-default .orders-account__image
+{
+    width: 260px;
+    height: 260px;
+}
+.orders-account__heading
+{
+    text-align: center;
+    font-family: var(--font-family-word-mono-font);
+}
+.orders-account--size-default .orders-account__heading
+{
+    min-height: 30px;
+    font-size: var(--font-size-lg);
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.orders-account--theme-default .orders-account__heading
+{
+    color: var(--charade);
+}
+.orders-account--size-default .orders-account__balance
+{
+    font-size: var(--font-size-m);
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.orders-account--theme-default .orders-account__balance
+{
+    color: var(--charade);
+}
+.orders-account--size-default .orders-account__currency
+{
+    margin-left: 4px;
+}

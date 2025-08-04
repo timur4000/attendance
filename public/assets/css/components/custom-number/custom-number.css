@@ -1,0 +1,18 @@
+.custom-number--size-default
+{
+    --input-number-input-width: 100px;
+}
+.custom-number
+{
+    display: flex;
+}
+.custom-number__input.input--size-middle
+{
+    width: var(--input-number-input-width);
+    margin: 0 6px;
+}
+.custom-number.disable
+{
+    pointer-events: none;
+    opacity: .4;
+}

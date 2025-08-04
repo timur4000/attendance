@@ -1,0 +1,23 @@
+.modal-paragraph
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.modal--theme-mercury .modal-paragraph
+{
+    color: var(--purple-heart);
+}
+.modal--size-middle .modal-paragraph
+{
+    font-size: var(--font-size-sm);
+    letter-spacing: 1px;
+}
+.modal--size-large .modal-paragraph
+{
+    font-size: var(--font-size-m);
+    letter-spacing: 1px;
+}
+.modal--size-full .modal-paragraph
+{
+    font-size: var(--font-size-lg);
+    letter-spacing: 1px;
+}

@@ -1,0 +1,10 @@
+.tabs-panel
+{
+    display: flex;
+    align-items: center;
+}
+.tabs-panel--size-default
+{
+    width: 100%;
+}
+.tabs-panel--theme-default {}

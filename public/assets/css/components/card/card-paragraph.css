@@ -1,0 +1,20 @@
+.card-paragraph
+{
+
+}
+.card-paragraph--size-default
+{
+
+}
+.card-paragraph--size-medium
+{
+    font-size: var(--font-size-m);
+}
+.card-paragraph--theme-default
+{
+    color: var(--jumbo);
+}
+.card-paragraph--theme-paarl
+{
+    color: var(--paarl);
+}

@@ -1,0 +1,21 @@
+.image
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.image__element
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.image__element--type-cover
+{
+    object-fit: cover;
+}
+.image__element--type-contain
+{
+    object-fit: contain;
+}

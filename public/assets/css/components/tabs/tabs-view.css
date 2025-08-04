@@ -1,0 +1,8 @@
+.tabs-view
+{
+
+}
+.tabs-view:not(.active)
+{
+    display: none;
+}

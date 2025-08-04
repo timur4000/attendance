@@ -1,0 +1,15 @@
+.dropdown__toggle
+{
+    transition: var(--transition-very-fast);
+    cursor: pointer;
+}
+.dropdown__toggle--size-middle
+{
+    padding: 4px 20px;
+    border-radius: var(--border-radius-middle);
+}
+.active > .dropdown__toggle--theme-wild-bold,
+.dropdown__toggle--theme-wild-bold:hover
+{
+    background-color: var(--wild-sand);
+}

@@ -1,0 +1,8 @@
+.no-transition *
+{
+    transition: unset !important;
+}
+.hide
+{
+    display: none;
+}

@@ -1,0 +1,89 @@
+.tabs
+{
+
+}
+.tabs--size-default
+{
+
+}
+.tabs--theme-default
+{
+
+}
+
+.tabs__panel
+{
+
+}
+
+.tabs__button
+{
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font-family-word-mono-font);
+}
+.tabs--size-default .tabs__button
+{
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-middle);
+    font-size: var(--font-size-xsmm);
+}
+.tabs--size-default .tabs__button:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+.tabs--theme-default .tabs__button
+{
+    background-color: var(--white);
+    color: var(--jumbo);
+    opacity: .9;
+    transition: var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+}
+.tabs--theme-default .tabs__button:hover
+{
+    color: var(--charade);
+    opacity: 1;
+    border: 1px solid var(--mercury);
+}
+.tabs__button:before
+{
+    content: '';
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+    transition: var(--transition-very-fast);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabs--theme-default  .tabs__button.active:before
+{
+    background-color: var(--azure);
+}
+.tabs--theme-default .tabs__button.active
+{
+    opacity: 1;
+    color: var(--azure);
+    pointer-events: none;
+}
+.tabs--theme-default .tabs__button.disabled
+{
+    opacity: .5;
+    pointer-events: none;
+}
+
+.tabs-content
+{
+
+}
+
+.tabs--size-default  .tabs-content__view
+{
+    margin-top: 20px;
+}
+.tabs-content__view:not(.active)
+{
+    display: none;
+}

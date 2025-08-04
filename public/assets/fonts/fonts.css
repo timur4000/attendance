@@ -1,0 +1,66 @@
+@font-face
+{
+    font-family: 'Ubuntu Mono Regular';
+    font-display: swap;
+    src: url('/assets/fonts/ubuntu-mono/ubuntu-mono-regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Ubuntu Regular';
+    font-display: swap;
+    src: url('/assets/fonts/ubuntu/ubuntu-regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Ubuntu Light';
+    font-display: swap;
+    src: url('/assets/fonts/ubuntu/ubuntu-light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Work Sans Regular';
+    font-display: swap;
+    src: url('/assets/fonts/work-sans/work-sans-regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Work Sans Thin';
+    font-display: swap;
+    src: url('/assets/fonts/work-sans/work-sans-thin.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Work Sans Semi Bold';
+    font-display: swap;
+    src: url('/assets/fonts/work-sans/work-sans-semi-bold.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Myriadpro Light';
+    font-display: swap;
+    src: url('/assets/fonts/myriad-pro/MyriadPro-Light.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Myriadpro Regular';
+    font-display: swap;
+    src: url('/assets/fonts/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype');
+}
+@font-face
+{
+    font-family: 'Raleway Regular';
+    font-display: swap;
+    src: url('/assets/fonts/raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Raleway Light';
+    font-display: swap;
+    src: url('/assets/fonts/raleway/static/Raleway-Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Segoe UI Emoji';
+    font-display: swap;
+    src: url('/assets/fonts/segoe-ui-emoji/Segoe-UI-Emoji.TTF') format('truetype');
+}

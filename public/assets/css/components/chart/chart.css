@@ -1,0 +1,15 @@
+.chart
+{
+    position: relative;
+    overflow: hidden;
+}
+.chart--theme-nothing
+{
+
+}
+.chart--theme-default
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+    border-radius: 6px;
+}

@@ -1,0 +1,31 @@
+.record-view
+{
+
+}
+.record-view__line
+{
+
+}
+.record-view__line--theme-white
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+}
+.record-view__line--size-default
+{
+    border-radius: var(--border-radius-middle);
+    padding: 20px;
+}
+.record-view__line-column
+{
+    display: flex;
+    align-items: center;
+}
+.record-view__line-column--size-default
+{
+
+}
+.record-view__line-column--position-right
+{
+    justify-content: flex-end;
+}

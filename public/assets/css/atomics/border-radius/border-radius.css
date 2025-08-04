@@ -1,0 +1,10 @@
+:root
+{
+    --border-radius-small: 2px;
+
+    --border-radius-middle: 6px;
+
+    --border-radius-large: 10px;
+
+    --border-radius-circle: 50%;
+}

@@ -1,0 +1,18 @@
+.notification-line
+{
+
+}
+.notification-line.upper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification-line.lower
+{
+
+}
+.notification-item.default .notification-line.lower
+{
+    margin-top: 15px;
+}

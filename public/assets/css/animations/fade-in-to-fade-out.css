@@ -1,0 +1,19 @@
+:root
+{
+    --fade-in-to-fade-out-color: var(--wild-sand);
+}
+@keyframes fade-in-to-fade-out
+{
+    from
+    {
+        background-color: transparent;
+    }
+    50%
+    {
+        background-color: var(--fade-in-to-fade-out-color);
+    }
+    to
+    {
+        background-color: transparent;
+    }
+}

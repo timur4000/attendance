@@ -1,0 +1,160 @@
+.integer-statistics
+{
+    position: relative;
+}
+.integer-statistics--size-default
+{
+    padding: 15px 20px;
+}
+.integer-statistics--type-default
+{
+
+}
+.integer-statistics.default.integer-statistics--theme-default
+{
+    background-color: var(--white);
+    border: 1px solid var(--mercury);
+    border-radius: var(--border-radius-large);
+}
+
+.integer-statistics__external-button
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.integer-statistics__heading
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.integer-statistics__heading--size-default
+{
+    margin-bottom: 15px;
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}
+.integer-statistics__heading--theme-default
+{
+    color: var(--jumbo);
+}
+
+.integer-statistics__value
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.integer-statistics__value--type-default
+{
+    display: flex;
+    align-items: center;
+}
+
+.integer-statistics__sum
+{
+    font-family: var(--font-family-word-mono-font);
+}
+.integer-statistics__sum.default
+{
+    font-size: var(--font-size-26);
+}
+.integer-statistics__sum.second
+{
+    font-size: var(--font-size-m);
+}
+.integer-statistics__sum--theme-default
+{
+    color: var(--charade);
+}
+
+.integer-statistics__sum-value
+{
+
+}
+.integer-statistics__sum-value--size-default
+{
+
+}
+
+.integer-statistics__currency
+{
+    margin-left: 6px;
+}
+
+.integer-statistics__percents
+{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-word-mono-font);
+}
+.integer-statistics__percents svg
+{
+
+}
+.integer-statistics__percents--size-default
+{
+    margin-left: 20px;
+    padding: 6px 16px 6px 8px;
+    font-size: var(--font-size-xxsmm);
+    letter-spacing: 2px;
+}
+.integer-statistics__percents--theme-default
+{
+    border-radius: var(--border-radius-large);
+}
+.integer-statistics__percents--theme-default.success
+{
+    background-color: var(--emerald-opacity-01);
+}
+.integer-statistics__percents--theme-default.alert
+{
+    background-color: var(--persian-rose-opacity-01);
+}
+.integer-statistics.reverse .integer-statistics__percents--theme-default.success
+{
+    background-color: var(--persian-rose-opacity-01);
+}
+.integer-statistics.reverse .integer-statistics__percents--theme-default.alert
+{
+    background-color: var(--emerald-opacity-01);
+}
+.integer-statistics__percents--theme-default.nothing
+{
+    background-color: var(--wild-sand);
+}
+
+.integer-statistics__percents-icon
+{
+    margin-right: 6px;
+}
+.integer-statistics__percents--theme-default.alert .integer-statistics__percents-icon
+{
+    transform: rotate(180deg);
+}
+.integer-statistics__percents--theme-default.success .integer-statistics__percents-icon.default,
+.integer-statistics__percents--theme-default.alert .integer-statistics__percents-icon.default,
+.integer-statistics__percents--theme-default.nothing .integer-statistics__percents-icon.indicator
+{
+    display: none;
+}
+
+.integer-statistics__description
+{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-word-mono-font);
+}
+.integer-statistics__description--size-default
+{
+    margin-top: 15px;
+    font-size: var(--font-size-xsm);
+    letter-spacing: 1px;
+}
+.integer-statistics__description--theme-default
+{
+    color: var(--jumbo);
+}
+
+.integer-statistics__description .integer-statistics__sum
+{
+    margin-left: 10px;
+}

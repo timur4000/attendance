@@ -1,0 +1,39 @@
+:root
+{
+    --integer-statistics-count: 1;
+    --integer-statistics-margin: 4px;
+}
+.integer-statistics-manager
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.integer-statistics.group
+{
+    width: calc(100% / var(--integer-statistics-count) - ((var(--integer-statistics-count) - 1) * var(--integer-statistics-margin) / var(--integer-statistics-count)));
+    background-color: var(--white);
+}
+.integer-statistics.group.sequence
+{
+    margin-left: var(--integer-statistics-margin);
+}
+.integer-statistics.group.lower-sequence
+{
+    margin-top: var(--integer-statistics-margin);
+}
+.integer-statistics.group.top-left
+{
+    border-radius: var(--border-radius-large) 0 0 0;
+}
+.integer-statistics.group.bottom-left
+{
+    border-radius: 0 0 0 var(--border-radius-large);
+}
+.integer-statistics.group.top-right
+{
+    border-radius: 0 var(--border-radius-large) 0 0;
+}
+.integer-statistics.group.bottom-right
+{
+    border-radius: 0 0 var(--border-radius-large) 0;
+}

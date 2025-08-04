@@ -1,0 +1,12 @@
+.paragraph
+{
+
+}
+.paragraph--size-medium
+{
+    font-size: var(--font-size-sm);
+}
+.paragraph--theme-royal-blue
+{
+    color: var(--royal-blue);
+}

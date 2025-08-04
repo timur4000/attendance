@@ -1,0 +1,47 @@
+.list-detail
+{
+
+}
+.list-detail__item
+{
+    list-style: none;
+}
+.list-detail__item--size-default:nth-child(n+2)
+{
+    margin-top: 15px;
+}
+.list-detail__item-property
+{
+
+}
+.list-detail__item-property--size-default
+{
+    margin-bottom: 10px;
+    font-size: var(--font-size-xsmm);
+    letter-spacing: 1px;
+}
+.list-detail__item-property--theme-default
+{
+    font-family: var(--font-family-word-mono-font);
+    color: var(--jumbo);
+}
+.list-detail__item.boolean.item-success .list-detail__item-value
+{
+    color: var(--emerald);
+}
+.list-detail__item.boolean.item-alert .list-detail__item-value
+{
+    color: var(--persian-rose);
+}
+.list-detail__item.system
+{
+    color: var(--jumbo);
+}
+.list-detail__item-value--size-default
+{
+    letter-spacing: 1px;
+}
+.list-detail__item-value--theme-default
+{
+    font-family: var(--font-family-word-mono-font);
+}

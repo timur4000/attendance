@@ -1,0 +1,94 @@
+.left-navigation
+{
+    display: flex;
+    flex-direction: column;
+    width: var(--left-navigation-width);
+    height: 100%;
+    transition: var(--transition-very-fast);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-level-2);
+}
+body.no-tools .left-navigation
+{
+    display: none;
+}
+.left-navigation.closed .logotype__heading,
+.left-navigation.closed .menu-link__text
+{
+    display: none;
+}
+.left-navigation.closed .logotype__icon
+{
+    margin-right: unset;
+    margin-left: 4.8px;
+}
+.left-navigation__main
+{
+    height: calc(100% - var(--size-header-height));
+}
+.left-navigation--theme-white
+{
+    background-color: var(--white);
+    border-right: 1px solid var(--mercury);
+}
+.left-navigation__header
+{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    height: var(--size-header-height);
+}
+.left-navigation__header--type-underline:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: var(--mercury);
+}
+.left-navigation__header--type-underline.left-navigation__header--theme-mercury:before
+{
+    background-color: var(--mercury);
+}
+.left-navigation__header--type-underline.left-navigation__header--size-default:before
+{
+    width: calc(var(--left-navigation-width) - var(--left-navigation-header-line-width));
+    height: 1px;
+    left: calc(var(--left-navigation-header-line-width) / 2);
+}
+.left-navigation.closed .left-navigation__header--type-underline.left-navigation__header--size-default:before
+{
+    --left-navigation-header-line-width: 40px;
+}
+.left-navigation__toggle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.left-navigation.closed .left-navigation__toggle
+{
+    transform: rotate(180deg);
+}
+.left-navigation__toggle--theme
+{
+    background-color: var(--white);
+    color: var(--charade);
+    transition: var(--transition-very-fast);
+    border: 1px solid var(--mercury);
+}
+.left-navigation__toggle--theme:hover
+{
+    color: var(--white);
+    background-color: var(--royal-blue);
+}
+.left-navigation__toggle--size-middle
+{
+    width: 31px;
+    height: 31px;
+    right: -16px;
+    border-radius: var(--border-radius-circle);
+}
