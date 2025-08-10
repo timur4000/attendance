@@ -13,7 +13,6 @@ import { GallerySliderSidesClassifier }              from '../../components/Gall
 import { DetectedRfidTagsIdActionsClassifier }       from './DetectedRfidTagsIdActionsClassifier.js';
 import { ObjectPictures }                            from '../../components/ObjectPictures/ObjectPictures.js';
 import { ObjectPictureCodeEntityTypesClassifier }    from '../../components/ObjectPictures/ObjectPictureCodeEntityTypesClassifier.js';
-import { getStructureMax }                           from '../../tea-modules/Functions/Structures/getStructureMax.js';
 import { HttpRequestsGroup }                         from '../../tea-modules/Classes/Requests/RequestGroup/HttpRequestsGroup.js';
 import { HttpRequestsGroupEventsClassifier }         from '../../tea-modules/Classes/Requests/RequestGroup/HttpRequestsGroupEventsClassifier.js';
 import { GallerySliderEventsClassifier }             from '../../components/GallerySlider/Classifiers/GallerySliderEventsClassifier.js';
@@ -86,13 +85,6 @@ export class RegistrationRecordsGallerySliders
      * @type { number }
      **/
     _timeoutId = 0;
-    
-    /**
-     * @public
-     *
-     * @type { number }
-     **/
-    _lastIdRow = 0;
     
     /**
      * @public
@@ -529,35 +521,47 @@ export class RegistrationRecordsGallerySliders
     async update()
     {
         this._isDraws = true;
-        
+ 
         const records = await this.getRecords();
-        
+ 
         await this._log({ type: RegistrationRecordsGallerySlidersLogTypesClassifier.GET_RECORDS, records: records });
-        
+ 
         if (isStructureEmpty(records) || records instanceof HttpRequest)
         {
             this._isDraws = false;
-            
+ 
             return ;
         }
-        
-        this._lastIdRow = getStructureMax(records, 'id_row');
-        
+        // Полная перерисовка: очищаем оба слайдера и строим заново из снапшота
+        this.entrancesGallerySlider.gallerySlider.wrapper.clear();
+        this.exitsGallerySlider.gallerySlider.wrapper.clear();
+
+        // Разделяем записи по действию
+        let entrances = this.getRecordsByActionId(records, this.entrancesGallerySlider.idAction);
+        let exits = this.getRecordsByActionId(records, this.exitsGallerySlider.idAction);
+
+        // Сортировка по возрастанию id_row (хронологический порядок)
+        entrances = entrances.sort((a, b) => a.id_row - b.id_row);
+        exits = exits.sort((a, b) => a.id_row - b.id_row);
+
+        // Ограничиваем количеством элементов как в бэкенде (дублируем на фронте для надёжности)
+        const maxItems = this.getConfigurationValue(ConfigurationCodesClassifier.MAX_ITEMS_OF_GALLERY);
+        entrances = entrances.slice(Math.max(entrances.length - maxItems, 0));
+        exits = exits.slice(Math.max(exits.length - maxItems, 0));
+
+        // Отрисовка
         if (app.isFrontendLogs)
         {
-            await this.add(records, this.entrancesGallerySlider);
-            
-            await this.add(records, this.exitsGallerySlider);
+            await this.add(entrances, this.entrancesGallerySlider);
+            await this.add(exits, this.exitsGallerySlider);
         }
         else
         {
-            const entrancesGallerySlider = this.add(records, this.entrancesGallerySlider);
-            
-            const exitsGallerySlider = this.add(records, this.exitsGallerySlider);
-            
-            await Promise.all([ entrancesGallerySlider, exitsGallerySlider ]);
+            const addEntrances = this.add(entrances, this.entrancesGallerySlider);
+            const addExits = this.add(exits, this.exitsGallerySlider);
+            await Promise.all([ addEntrances, addExits ]);
         }
-        
+ 
         this._isDraws = false;
     }
     
@@ -998,12 +1002,11 @@ export class RegistrationRecordsGallerySliders
                     {
                         date_start: DateManager.date(DateFormatsClassifier.Y_m_d),
                         number_of_records: this.getConfigurationValue(ConfigurationCodesClassifier.LIMIT_NUMBER_OF_RECORDS),
-                        id_row: this._lastIdRow,
                     },
             });
-        
+ 
         let response;
-        
+ 
         try
         {
             response = (await httpRequest.execute()).data;
@@ -1017,7 +1020,7 @@ export class RegistrationRecordsGallerySliders
                 app.notifications.error(exception.statusText, [ httpRequest.url.toString() ]);
             }
         }
-        
+         
         return response;
     }
     
