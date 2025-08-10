@@ -353,7 +353,22 @@ export class GallerySliderWrapper
 
         this._calculateProcessing();
     }
-    
+
+    /**
+     * @public
+     *
+     * @description Removes all items from the wrapper.
+     *
+     * @return { void }
+     */
+    clear()
+    {
+        while (this.items.length)
+        {
+            this.remove(0, true);
+        }
+    }
+
     /**
      * @public
      *
