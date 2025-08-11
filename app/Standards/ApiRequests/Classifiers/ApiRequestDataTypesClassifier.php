@@ -98,4 +98,6 @@ enum ApiRequestDataTypesClassifier: string
     case DETECTED_RFID_TAGS = 'DetectedRfidTags';
 
     case REGISTRATION_RECORDS = 'GetRegistrationRecords';
+
+    case REGISTRATION_RECORDS_V2 = 'GetRegistrationRecords2';
 }
